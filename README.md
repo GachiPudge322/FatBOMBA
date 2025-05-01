@@ -7,6 +7,8 @@ https://www.123test.com/iq-test/
 
 Ліцензійна угода з кінцевим користувачем (EULA)
 
+![Uploading solved-chinese-license-agreement-default-on-a-2024-imac-v0-2y6cq82ovsgc1.png…]()
+
 Версія 1448.0 – Пакт із Великим Братом
 
 Приймаючи цю угоду, ви автоматично погоджуєтесь на таке:
