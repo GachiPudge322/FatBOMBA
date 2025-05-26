@@ -168,7 +168,7 @@ footer {
   max-width: 1500px;
   margin: 0 auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 75%, rgba(0, 0, 0, 1) 100%);
-  color: white;
+  color: #ffa500;;
   font-size: 15px;
 }
 
@@ -296,6 +296,12 @@ footer {
     z-index: 2;
 }
 
+.importantlink,
+.importantlink:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .lr {
   margin-left: 8%;
   display: flex;
@@ -304,22 +310,23 @@ footer {
 }
 
 .downloadButton {
-  box-shadow: inset 0px 1px 0px 0px #000000;
-  background: linear-gradient(to bottom, #2e2e2e 5%, #000000 100%);
-  background-color: #2e2e2e;
+  box-shadow: inset 0px 1px 0px 0px #ff8c00;
+  background: linear-gradient(to bottom, #ffa500 5%, #cc7000 100%);
+  background-color: #ffa500;
   border-radius: 3px;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #cc8400;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
+  color: black;
   font-family: monospace;
   font-size: 25px;
   padding: 6px 24px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #000000;
+  text-shadow: 0px 1px 0px #994d00;
   margin-top: 20px;
   margin-bottom: 1px;
 }
+
 
 .downloadButton:hover {
   background: linear-gradient(135deg, #000000, #2a2a2a);
@@ -344,7 +351,7 @@ footer {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 1) 100%;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
