@@ -159,6 +159,11 @@ footer {
   width: 100%;
 }
 
+.example {
+  padding-right: 430px;
+  font-size: 10px;
+}
+
 .footertext {
   display: flex;
   justify-content: space-between;
@@ -168,7 +173,7 @@ footer {
   max-width: 1500px;
   margin: 0 auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 75%, rgba(0, 0, 0, 1) 100%);
-  color: #ffa500;;
+  color: white;
   font-size: 15px;
 }
 
@@ -193,13 +198,13 @@ footer {
 }
 
 .feature {
-  background: #1f1f1f;
+  background: #ffa500;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   max-width: 300px;
   transition: transform 0.3s;
-  color: white;
+  color: black;
 }
 
 .feature:hover {
@@ -223,7 +228,7 @@ footer {
 .mumei {
   position: absolute;
   bottom: 0;
-  width: 150px; /* змінюй під себе */
+  width: 150px;
   height: auto;
   max-width: 100%;
   z-index: 10;
@@ -329,7 +334,7 @@ footer {
 
 
 .downloadButton:hover {
-  background: linear-gradient(135deg, #000000, #2a2a2a);
+  background: linear-gradient(135deg, #ffa500, #ffa500);
   transform: scale(1.05);
 }
 
