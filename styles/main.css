@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'F25_Bank_Printer', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+  background: black;
+  color: #ffffff;
+  line-height: 1.6;
+  position: relative;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.result-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.gif-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.topbar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 910px;
+  z-index: 1000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 75%, rgba(26, 0, 0, 1) 100%);
+  font-family: bank;
+  font-size: 22px;
+  font-weight: bold;
+  max-height: 100px;
+  padding: 0px;
+  border-bottom: 1px solid #222;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.headercontents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  min-height: 35px;
+}
+
+.contents {
+  margin-top:0px;
+  padding: 1rem;
+  background-image: url("/resources/bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 130px auto;
+  position: relative;
+}
+
+.headertext {
+  color: #fce8d5;
+  text-decoration: none;
+}
+
+.headerlogo {
+  height: 50px;
+}
+
+.gif-box img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+}
+
+.gif-box img.after {
+  opacity: 0;
+}
+
+.gif-box.active img.after {
+  opacity: 1;
+}
+
+.gif-box.active img.before {
+  opacity: 0;
+}
+
+.gif-text {
+  max-width: 400px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.gif-text span {
+  display: block;
+  transition: opacity 0.6s ease;
+}
+
+.gif-text .after-text {
+  opacity: 0;
+}
+
+.gif-text .before-text {
+  opacity: 1;
+}
+
+.gif-container.active .before-text {
+  opacity: 0;
+}
+
+.gif-container.active .after-text {
+  opacity: 1;
+}
+
+.gif-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.footer {
+  flex: 1;
+  align-self: flex-end;
+  text-align: center;
+  border-top: 1px dotted white;
+  margin-top: 2.25em;
+  margin-bottom: 1em;
+  font-size: 15px;
+  width: 100%;
+}
+
+.footertext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 75%, rgba(0, 0, 0, 1) 100%);
+  color: white;
+  font-size: 15px;
+}
+
+.footer_top {
+  flex: 1;
+  align-self: flex-end;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  width: 100%;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 300px;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.docholder {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 91%, rgba(0, 0, 0, 1) 100%);
+  border-color: rgb(92, 92, 92);
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  width: 100%;
+  max-width: 58em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mumei {
+  position: absolute;
+  bottom: 0;
+  width: 150px; /* змінюй під себе */
+  height: auto;
+  max-width: 100%;
+  z-index: 10;
+  pointer-events: none;
+  bottom: 60px;
+}
+
+    .catalogue {
+    display: flex;
+    flex-direction: row;
+    min-height: 420px;
+    margin-left: 7%;
+}
+
+.cataloguetop,
+.cataloguebottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.6em;
+    gap: 0.5em;
+}
+
+.catalogueentry {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    user-select: none;
+}
+
+.catalogueentry:hover {
+    transform: scale(1.2);
+}
+
+.entryselected {
+    filter: drop-shadow(0 0 8px #ffffff88) brightness(1.2) saturate(180%);
+    transform: scale(1.2);
+}
+
+.cataloguepreview {
+    position: relative;
+    width: 333px;
+    height: 250px;
+    margin: 2em auto;
+    z-index: 2;
+}
+
+.cataloguepreviewimg,
+.cataloguepreviewimgoverlay,
+.cataloguepreviewimgoverlaygrunge {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+.cataloguepreviewimgoverlay {
+    width: 475px;
+    transform: translate(-35px, -35px);
+    z-index: 1;
+}
+
+.cataloguepreviewsubtitle {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    font-size: 14px;
+    margin: 0 15px;
+    transform: translateY(-45px);
+    padding: 0.2em;
+    z-index: 2;
+}
+
+.lr {
+  margin-left: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.downloadButton {
+  box-shadow: inset 0px 1px 0px 0px #000000;
+  background: linear-gradient(to bottom, #2e2e2e 5%, #000000 100%);
+  background-color: #2e2e2e;
+  border-radius: 3px;
+  border: 1px solid #3d3d3d;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 25px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000000;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+
+.downloadButton:hover {
+  background: linear-gradient(135deg, #000000, #2a2a2a);
+  transform: scale(1.05);
+}
+
+.downloadButton:active {
+  transform: scale(0.97);
+}
+
+.email-input {
+  padding: 0.5rem;
+  border-radius: 1px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  margin-right: 0.5rem;
+}
+.contact-box {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+.email-input::placeholder {
+  color: #888;
+}

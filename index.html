@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+   <link rel="icon" type="image/x-icon" href="resources/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FatBOMBA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+ .banner {
+      position: absolute;
+      pointer-events: none;
+      z-index: 999;
+      width: 100px;
+      overflow: hidden;
+      height: 131.15%;
+      top: 0;
+    }
+
+    .bannerleft {
+      mask-image: linear-gradient(90deg, rgba(0,0,0,0) 25%, rgba(1.0,1.0,1.0,0.3) 85%, rgba(255,255,255,0.2) 98%);
+      left: 0;
+      background-image: url("resources/banner.png");
+      transform: translateX(-100px);
+      z-index: 999;
+    }
+
+    .bannerright {
+      mask-image: linear-gradient(270deg, rgba(0,0,0,0) 25%, rgba(1.0,1.0,1.0,0.3) 85%, rgba(255,255,255,0.2) 98%);
+      right: 0;
+      background-image: url("resources/banner.png");
+      transform: translateX(100px);
+      z-index: 999;
+    }
+
+</style>
+<div class="docholder">
+<div class="contents">
+<body onload="AOS.init()">
+<div class="banner bannerleft"></div>
+<div class="banner bannerright"></div>
+  <div class="topbar">
+  <div class="headercontents">
+    <a class="headertext">Oleg Corp.</a>
+    <img src="resources/olegcorp.jpg" class="headerlogo">
+  </div>
+</div>
+<footer class="footer_top">
+    <div class="footertext">
+        <div><a href="/" ,="" class="importantlink">homepage</a> ... <a href="https://t.me/Nikusudesu">contact</a> ... <a href="https://youtu.be/qlaF4bQgHz0">about</a></div>
+        <a> © 2025</a>
+    </div>
+</footer>
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="resources/Sam.png" alt="FatBOMBA" style="width: 60%; margin-bottom: 1rem;">
+</div>
+
+    <header>
+      <h1>FatBOMBA</h1>
+      <p>Контролюй своє харчування з нашим інтуїтивним калькулятором калорій</p>
+      <a href="app/FatBOMBA.zip" class="downloadButton" target="_blank">Завантажити для Windows</a>
+      <br>
+      <a href="https://github.com/GachiPudge322/FatBOMBA" class="downloadButton" target="_blank">Source Code</a>
+    </header>
+<section id="video">
+  <h2>Як працює FatBOMBA?</h2>
+  <p>Дивіться відео демонстрації нашого додатку в дії:</p>
+  <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline
+    style="width: 90%; max-width: 800px; border-radius: 12px; margin-top: 1rem;">
+    <source src="resources/demo.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео тег.
+  </video>
+</section>
+
+    <section id="features" data-aos="fade-up">
+          <img src="resources/logo.png" alt="logo" style="width: 80px; margin-bottom: 1rem;">
+      <h2>Чому саме FatBOMBA?</h2>
+      <div class="features">
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <h3>Легко встановити</h3>
+          <p>Має довідку та дуже легкий процес встановлення зрозумілий кожному</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+          <h3>Гнучкий функціонал</h3>
+          <p>Налаштування під себе, історія та парсинг продуктів з інтернету</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+          <h3>Працює будь де</h3>
+          <p>Може працювати навіть на Марсі без доступа к інтернету</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="result">
+      <h2>Результат, який видно одразу!</h2>
+      <div class="result-section">
+        <div class="gif-container">
+          <div class="gif-box">
+            <img class="before" src="resources/radj60c.gif" alt="before">
+            <img class="after" src="resources/cm60c.gif" alt="after">
+          </div>
+          <div class="gif-text">
+            <span class="before-text">Це ви до використання нашого застосунку, депресивний та важкий!</span>
+            <span class="after-text">Це ви після використання нашого застосунку, легкий та радісний!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Що кажуть користувачі?</h2>
+      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+        <div style="max-width: 300px;">
+          <p>“Нарешті бачу прогрес! Дуже зручний додаток! В комплекті подарували класні фільми!”</p>
+          <strong>— Олег, 26</strong>
+        </div>
+        <div style="max-width: 300px;">
+          <p>“Завдяки цьому сайту, в моєму масонаборі з'явиться щось більш різноманітне, ніж гирі.”</p>
+          <strong>— Данило, 18</strong>
+        </div>
+      </div>
+    </section>
+</div>
+    <section>
+      <h2>Поширені питання</h2>
+      <details>
+        <summary>Чи безкоштовний додаток?</summary>
+        <p>Вся програма повністю безкоштовна.</p>
+      </details>
+      <details>
+        <summary>Чи можна використовувати без реєстрації?</summary>
+        <p>Можна використовувати її без інтернету та регістрації.</p>
+      </details>
+    </section>
+
+    <div class="lr">
+    <h2>Інші застосунки</h2>
+    </div>
+
+<div class="catalogue">
+                            <div class="cataloguetop">
+        <div class="cataloguepreview">
+            <img src="resources/fnaf1-logo.png" class="cataloguepreviewimg" id="cataloguepreviewimgid" draggable="false">
+            <img src="resources/tv2_small.png" class="cataloguepreviewimgoverlay" draggable="false">
+            <img src="resources/screen_grunge.png" class="cataloguepreviewimgoverlaygrunge" draggable="false">
+            <img src="resources/tv_static.gif" class="loading" draggable="false">
+            <div class="cataloguepreviewsubtitle">
+                <div id="cname" style="margin-left: 3px;">Five Nights at Oleg</div>
+                <div id="cdate" style="margin-right: 3px;">To Be Released</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cataloguebottom">
+                                <img class="catalogueentry" src="resources/fnaf1-logo.png" data-name="Five Nights at Oleg" data-case_still="fnaf1-logo.png" data-preview="fnaf1.gif" data-date="To Be Released" data-htmlpath="games/1/index.html" data-index="0" draggable="false">
+                                <img class="catalogueentry" src="resources/ad-logo.png" data-name="AD S FREDDI" data-case_still="ad-logo.png" data-preview="ad-preview.gif" data-date="05 Jan 2025" data-htmlpath="games/ad/index.html" data-index="1" draggable="false">
+                                <img class="catalogueentry" src="resources/fnaf2-logo.png" data-name="FNAF 2" data-case_still="fnaf2-logo.png" data-preview="fnaf2-preview.gif" data-date="10 Nov 2014" data-htmlpath="games/2/index.html" data-index="2" draggable="false">
+                                <img class="catalogueentry" src="resources/fnaf3-logo.png" data-name="FNAF 3" data-case_still="fnaf3-logo.png" data-preview="fnaf3-preview.gif" data-date="02 Mar 2015" data-htmlpath="games/3/index.html" data-index="3" draggable="false">
+                                <img class="catalogueentry" src="resources/fnaf4-logo.png" data-name="FNAF 4" data-case_still="fnaf4-logo.png" data-preview="fnaf4-preview.gif" data-date="23 Jul 2015" data-htmlpath="games/4/index.html" data-index="4" draggable="false">
+                                <img class="catalogueentry" src="resources/fnaf6-logo.png" data-name="FNAF 6" data-case_still="fnaf6-logo.png" data-preview="fnaf6-preview.gif" data-date="04 Dec 2017" data-htmlpath="games/ps/index.html" data-index="5" draggable="false">
+                            </div>
+                        </div>
+
+<form id="subscribe-form" class="contact-box">
+  <h2>Хочеш бути першим, хто дізнається про нові застосунки?</h2>
+  <input type="email" name="user_email" id="user_email" placeholder="Твій gmail" class="email-input" required>
+  <button type="submit" class="downloadButton">Підписатися</button>
+</form>
+
+<img src="resources/mumei.png" class="mumei" alt="mumei">
+<footer class="footer">
+    <div class="footertext">
+        <div><a href="/" ,="" class="importantlink">homepage</a> ... <a href="https://t.me/Nikusudesu">contact</a> ... <a href="https://youtu.be/qlaF4bQgHz0">about</a></div>
+        <a>Oleg Corp. © 2025</a>
+    </div>
+</footer>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/gameselect.js"></script>
+</body>
+</html>
